@@ -82,7 +82,7 @@ def set_interpreter(img_path, MODEL_PATH):
 # In[5]:
 
 
-def predict(output_details):
+def predict(output_details, interpreter):
     return interpreter.get_tensor(output_details[0]['index'])[0], interpreter.get_tensor(output_details[2]['index'])[0]
 
 
